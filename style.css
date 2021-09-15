@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,700;1,400;1,700&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-transparente {
+    background-color: #17bb8d12;
+}
+
+.bg-verde {
+    background-color: #092f28;
+}
+
+#tela-principal {
+    background-color: #062e2d;
+}
+
+#sombra-efeito {
+    background-color: rgba(0, 0, 0, 0.445);
+    height: 100vh;
+}
+
+.conhecer-botao {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 125px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Anonymous Pro', monospace;
+
+}
+
+.botao-personalizar {
+    color: #ffff;
+    padding: 10px 25px;
+    background-image: linear-gradient(to right, #0d423a, #18c594, #0d423a);
+    border:none;
+    background-size: 200%;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao-personalizar a {
+    text-decoration: none;
+}
+
+.botao-personalizar:hover {
+    color: #ffff;
+    background-position: right;
+}
+
+.midias-sociais {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+
+.desenvolvedor {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.desenvolvedor a {
+    text-decoration: none;
+    color: #ffff;
+}
+#myVideo {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    /* top: 125px; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .card-servico {
+      cursor: pointer;
+      transition: all 0.2s;
+  }
+
+  .card-servico:hover {
+      transform: scale(0.9);
+  }
+
+  @media only screen and (max-width: 600px) {
+    #myVideo {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 125px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      #sombra-efeito {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.445);
+        /* height: 100vh; */
+    }
+  }
+  
+  @media only screen and (min-width:321px) and (max-width:768px) {
+    #myVideo {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 200px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      #sombra-efeito {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.445);
+        /* height: 100vh; */
+    }
+  }
+  
+  @media only screen and (min-width:769px) {
+    /* #myVideo {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 230px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      } */
+  }
+
+  .card-contato {
+      width: 350px;
+      height: 250px;
+      margin-top: 100px;
+  }
+
+  .contato-a p a  {
+      color: #ffff;
+      text-decoration: none;
+  }
